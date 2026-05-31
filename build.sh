@@ -17,7 +17,10 @@ done
 
 cp resume.pdf dist/ 2>/dev/null || true
 cp profile.jpg dist/ 2>/dev/null || true
+cp avatar-favicon.png dist/ 2>/dev/null || true
 cp download.png dist/ 2>/dev/null || true
+cp robots.txt dist/ 2>/dev/null || true
+cp sitemap.xml dist/ 2>/dev/null || true
 cp -r fonts dist/ 2>/dev/null || true
 
 # 3. Swap module shader import → bundled IIFE in all HTML files

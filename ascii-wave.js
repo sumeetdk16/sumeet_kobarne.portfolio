@@ -29,7 +29,7 @@
 
     var width, height, cols, rows;
     var time = 0;
-    var ORANGE = '#FF9800';
+    var ORANGE = '#FB943B';
     var colors = getThemeColors();
     var visible = true;  // paused when off-screen
     var lastTs  = 0;     // 30fps throttle
