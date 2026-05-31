@@ -12,7 +12,7 @@
 
   /* ── Config (mirrors ReactBits props) ── */
   const CONFIG = {
-    colors:             ['#F97316'],
+    colors:             ['#FF9800'],
     baseSpring:         0.03,
     baseFriction:       0.9,
     baseThickness:      5,

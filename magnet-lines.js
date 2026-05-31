@@ -3,7 +3,7 @@
    Line color: #ffa530 (orange, matching site accent)
    ═══════════════════════════════════════════ */
 (function () {
-  const LINE_COLOR  = '#ff9100ff';
+  const LINE_COLOR  = '#FF9800';
   const LINE_WIDTH  = '2px';
   const LINE_HEIGHT = '24px';
   const ROWS        = 13;
