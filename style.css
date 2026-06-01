@@ -3214,8 +3214,9 @@ html.theme-transitioning .hero .h-xl.shiny-text {
   transform: rotate(20deg) scale(1.1);
 }
 [data-theme="light"] .nav-drawer-theme-btn {
-  background: rgba(255,255,255,0.12);
-  border-color: rgba(255,255,255,0.20);
+  /* Drawer panel is always warm-orange — white stays correct in both themes */
+  background: rgba(255,255,255,0.18);
+  border-color: rgba(255,255,255,0.28);
   color: #ffffff;
 }
 
@@ -3263,6 +3264,8 @@ html.theme-transitioning .hero .h-xl.shiny-text {
   .mq-track { animation: none; }
   .portrait-ring { animation: none; }
   #hero-shader { transition: none; }
+  /* Reveal elements immediately — avoid opacity-0 flash when transitions are instant */
+  .r { opacity: 1 !important; transform: none !important; }
 }
 
 /* ── Touch-friendly tap targets ──────────── */
