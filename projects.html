@@ -11,15 +11,22 @@
   <meta name="description" content="Explore projects built by Sumeet Kobarne — Full Stack Developer from Pune. Web apps, tools, and more built with React, Node.js, and modern web technologies." />
   <meta name="keywords" content="Sumeet Kobarne projects, Full Stack projects, React projects, Node.js, Web Development portfolio, Pune developer" />
   <meta name="author" content="Sumeet Kobarne" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://sumeetkobarne.vercel.app/projects.html" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <link rel="canonical" href="https://sumeetkobarne.vercel.app/projects" />
+  <link rel="alternate" hreflang="en" href="https://sumeetkobarne.vercel.app/projects" />
+  <link rel="alternate" hreflang="en-IN" href="https://sumeetkobarne.vercel.app/projects" />
+  <link rel="alternate" hreflang="x-default" href="https://sumeetkobarne.vercel.app/projects" />
 
   <!-- ── Open Graph ────────────────────────────────────────────────── -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://sumeetkobarne.vercel.app/projects.html" />
+  <meta property="og:url" content="https://sumeetkobarne.vercel.app/projects" />
   <meta property="og:title" content="Projects | Sumeet Kobarne — Full Stack Developer" />
-  <meta property="og:description" content="Explore projects built by Sumeet Kobarne — Full Stack Developer from Pune." />
+  <meta property="og:description" content="Explore projects built by Sumeet Kobarne — Full Stack Developer from Pune. React, Node.js, and modern web APIs." />
   <meta property="og:image" content="https://sumeetkobarne.vercel.app/profile.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Sumeet Kobarne — Full Stack Developer from Pune" />
+  <meta property="og:locale" content="en_IN" />
   <meta property="og:site_name" content="Sumeet Kobarne" />
 
   <!-- ── Twitter Card ──────────────────────────────────────────────── -->
@@ -27,6 +34,9 @@
   <meta name="twitter:title" content="Projects | Sumeet Kobarne" />
   <meta name="twitter:description" content="Full Stack Developer projects — React, Node.js, and modern web tech." />
   <meta name="twitter:image" content="https://sumeetkobarne.vercel.app/profile.jpg" />
+  <meta name="twitter:image:alt" content="Sumeet Kobarne — Full Stack Developer from Pune" />
+  <meta name="twitter:creator" content="@sumeetdk16" />
+  <meta name="twitter:site" content="@sumeetdk16" />
 
   <!-- ── Theme & Resource hints ───────────────────────────────────── -->
   <meta name="theme-color" content="#0d0a08" />
@@ -36,6 +46,83 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
   <link rel="stylesheet" href="style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sumeetkobarne.vercel.app/" },
+      { "@type": "ListItem", "position": 2, "name": "Projects", "item": "https://sumeetkobarne.vercel.app/projects" }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Projects by Sumeet Kobarne",
+    "description": "Web applications and tools built by Sumeet Kobarne — Full Stack Developer from Pune.",
+    "url": "https://sumeetkobarne.vercel.app/projects",
+    "author": {
+      "@type": "Person",
+      "name": "Sumeet Kobarne",
+      "url": "https://sumeetkobarne.vercel.app/"
+    },
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "SoftwareApplication",
+          "name": "Waste Snap",
+          "description": "Real-time waste image classifier that identifies recyclable vs garbage, saves location, and tracks user points. Built with high-accuracy machine learning models.",
+          "url": "https://github.com/sumeetdk16/waste-snap",
+          "applicationCategory": "WebApplication",
+          "author": { "@type": "Person", "name": "Sumeet Kobarne" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "SoftwareApplication",
+          "name": "Newsify",
+          "description": "Real-time news curation engine with custom topic and regional interest filters. Built with React and dynamic article aggregation.",
+          "url": "https://github.com/sumeetdk16/newsify",
+          "applicationCategory": "WebApplication",
+          "author": { "@type": "Person", "name": "Sumeet Kobarne" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "SoftwareApplication",
+          "name": "Currency Xchange",
+          "description": "Global exchange rate tracker with custom React hooks for state sync and real-time external API integration. Tailwind CSS UI.",
+          "url": "https://github.com/sumeetdk16/currency-xchange",
+          "applicationCategory": "WebApplication",
+          "author": { "@type": "Person", "name": "Sumeet Kobarne" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "SoftwareApplication",
+          "name": "Task Master",
+          "description": "Full-stack task management app with CRUD operations, real-time updates, and optimized state handling.",
+          "url": "https://github.com/sumeetdk16/task-master",
+          "applicationCategory": "WebApplication",
+          "author": { "@type": "Person", "name": "Sumeet Kobarne" }
+        }
+      }
+    ]
+  }
+  </script>
+
   <style>
     .bg-green {
       background: linear-gradient(140deg, #081a0e 0%, #0c2e18 55%, #0e3f22 100%)
@@ -74,7 +161,7 @@
         <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
         <span>Home</span>
       </a>
-      <a class="nav-a on" href="projects.html">
+      <a class="nav-a on" href="projects.html" aria-current="page">
         <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="6" height="6" rx="1"/><rect x="9" y="3" width="13" height="6" rx="1"/><rect x="2" y="12" width="13" height="6" rx="1"/><rect x="18" y="12" width="4" height="6" rx="1"/></svg>
         <span>Projects</span>
       </a>
@@ -143,6 +230,8 @@
           </p>
         </div>
 
+        <h2 class="list-h shiny-text r" style="margin-bottom:32px;font-size:clamp(16px,2vw,20px);">Featured Projects</h2>
+
         <div class="proj-grid-new" style="margin-bottom: 96px;">
 
           <!-- 01 Waste Snap -->
@@ -191,8 +280,8 @@
                   <span>Built with high-accuracy models.</span>
                 </li>
               </ul>
-              <a class="proj-link-new" href="https://github.com/sumeetdk16" target="_blank" rel="noopener">Learn more
-                ↗</a>
+              <p style="font-size:12px;font-family:var(--mono);color:var(--muted);margin-bottom:16px;letter-spacing:.04em;">React · Node.js · TensorFlow · MongoDB</p>
+              <a class="proj-link-new" href="https://github.com/sumeetdk16/waste-snap" target="_blank" rel="noopener">View on GitHub ↗</a>
             </article>
           </div>
 
@@ -241,8 +330,8 @@
                   <span>Responsive headline previews.</span>
                 </li>
               </ul>
-              <a class="proj-link-new" href="https://github.com/sumeetdk16" target="_blank" rel="noopener">Learn more
-                ↗</a>
+              <p style="font-size:12px;font-family:var(--mono);color:var(--muted);margin-bottom:16px;letter-spacing:.04em;">React · Node.js · News API · Tailwind CSS</p>
+              <a class="proj-link-new" href="https://github.com/sumeetdk16/newsify" target="_blank" rel="noopener">View on GitHub ↗</a>
             </article>
           </div>
 
@@ -290,8 +379,8 @@
                   <span>Sleek Tailwind-driven UI.</span>
                 </li>
               </ul>
-              <a class="proj-link-new" href="https://github.com/sumeetdk16" target="_blank" rel="noopener">Learn more
-                ↗</a>
+              <p style="font-size:12px;font-family:var(--mono);color:var(--muted);margin-bottom:16px;letter-spacing:.04em;">React · Custom Hooks · Exchange Rate API · Tailwind CSS</p>
+              <a class="proj-link-new" href="https://github.com/sumeetdk16/currency-xchange" target="_blank" rel="noopener">View on GitHub ↗</a>
             </article>
           </div>
 
@@ -339,8 +428,8 @@
                   <span>Optimized state handling.</span>
                 </li>
               </ul>
-              <a class="proj-link-new" href="https://github.com/sumeetdk16" target="_blank" rel="noopener">Learn more
-                ↗</a>
+              <p style="font-size:12px;font-family:var(--mono);color:var(--muted);margin-bottom:16px;letter-spacing:.04em;">React · Node.js · Express · MongoDB</p>
+              <a class="proj-link-new" href="https://github.com/sumeetdk16/task-master" target="_blank" rel="noopener">View on GitHub ↗</a>
             </article>
           </div>
 

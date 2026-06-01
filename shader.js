@@ -391,12 +391,26 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
    ═══════════════════════════════════════════ */
 window.handleContactFormSubmit = function (event) {
   event.preventDefault();
-  const name = document.getElementById('contact-name').value;
-  const email = document.getElementById('contact-email').value;
+  const form    = event.target;
+  const name    = document.getElementById('contact-name').value;
+  const email   = document.getElementById('contact-email').value;
   const message = document.getElementById('contact-message').value;
   const subject = encodeURIComponent(`Message from ${name}`);
-  const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+  const body    = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
   window.location.href = `mailto:kobarne21@gmail.com?subject=${subject}&body=${body}`;
+
+  // Reset form + show polite feedback after a brief delay
+  setTimeout(function () {
+    form.reset();
+    var status = form.querySelector('.form-status');
+    if (status) {
+      status.textContent = 'Email client opened — your message is pre-filled and ready to send.';
+      status.classList.add('visible');
+      setTimeout(function () {
+        status.classList.remove('visible');
+      }, 6000);
+    }
+  }, 600);
 };
 
 

@@ -5,7 +5,19 @@
    3. Skill tag ripple on click
    4. Hero floating particles
    5. Section entrance stagger
+   6. External link security
    ═══════════════════════════════════════════ */
+
+/* ── 6. EXTERNAL LINK SECURITY ──────────── */
+/* Ensure all target="_blank" links include noreferrer to prevent tab-napping */
+(function () {
+  document.querySelectorAll('a[target="_blank"]').forEach(function (a) {
+    var rel = (a.getAttribute('rel') || '').split(' ').filter(Boolean);
+    if (!rel.includes('noreferrer')) rel.push('noreferrer');
+    if (!rel.includes('noopener'))   rel.push('noopener');
+    a.setAttribute('rel', rel.join(' '));
+  });
+})();
 
 /* ── 1. SCROLL PROGRESS BAR ─────────────── */
 (function () {
