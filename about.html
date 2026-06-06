@@ -272,7 +272,7 @@
 ══════════════════════════════════════ -->
       <section class="sec dev-stack-sec" aria-label="Development Stack">
         <div class="wrap">
-          <h2 class="dev-stack-heading r shiny-text">Development Stack</h2>
+          <h2 class="dev-stack-heading r shiny-text"><span id="dev-stack-hl">Development Stack</span></h2>
 
           <div class="dev-stack-grid r" style="transition-delay:.06s;">
 
@@ -363,7 +363,7 @@
       <section class="sec" aria-label="Coding platforms">
         <div class="wrap">
           <span class="label r"><strong>Competitive Programming</strong></span>
-          <h2 class="h-lg r shiny-text" style="margin-bottom:32px;transition-delay:.05s;">Where I <em>compete</em></h2>
+          <h2 class="h-lg r shiny-text" style="margin-bottom:32px;transition-delay:.05s;">Where I <em><span id="compete-hl">compete</span></em></h2>
           <div class="plat-grid">
 
             <a class="plat lc r" href="https://leetcode.com/u/sumeetdk/" target="_blank" rel="noopener"
@@ -428,27 +428,230 @@
   </div><!-- /wrap -->
 
   <!-- ══════════════════════════════════════
-     PROJECTS CTA
+     PROJECTS SECTION
 ══════════════════════════════════════ -->
-  <div class="wrap">
-    <section class="sec" aria-label="Projects">
-      <div class="r" style="text-align:center;">
+  <div class="wrap-lg">
+    <section class="sec" aria-labelledby="about-proj-h">
+      <div class="r" style="text-align:center; margin-bottom:56px;">
         <span class="label"><strong>Projects</strong></span>
-        <h2 class="h-lg shiny-text" style="font-size:clamp(28px,4vw,40px);line-height:1.2;font-weight:600;margin-top:8px;margin-bottom:16px;">Built things I'm proud of.</h2>
-        <p style="font-size:15px;color:var(--muted);line-height:1.6;max-width:480px;margin:0 auto 32px;">React, Node.js, and modern web APIs — here's what I've shipped so far.</p>
-        <a class="proj-ext r" href="projects.html" style="font-size:14px;padding:12px 28px;display:inline-flex;align-items:center;gap:8px;transition-delay:.08s;">
-          View all projects
-          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </a>
+        <h2 class="h-lg shiny-text" id="about-proj-h"
+          style="font-size:clamp(32px, 5vw, 44px); line-height:1.2; font-weight:600; margin-top:8px;">
+          Built things <span id="about-proj-hl">I'm proud of</span>.
+        </h2>
+        <p style="font-size:16px; color:var(--muted); line-height:1.6; margin-top:14px; max-width:600px; margin-left:auto; margin-right:auto;">
+          React, Node.js, and modern web APIs — here's what I've shipped so far.
+        </p>
       </div>
 
+      <div class="proj-grid-new">
+
+        <!-- 01 Waste Snap -->
+        <div class="r" style="transition-delay:.05s;">
+          <article class="proj-card-new">
+            <div class="proj-header-new">
+              <div class="proj-icon-box green">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4.5 16.5c-1.5-1.25-2.5-3-2.5-5 0-4 3.5-7.5 7.5-7.5h2.5" />
+                  <path d="M8 2 11 4.5 8 7" />
+                  <path d="M19.5 7.5c1.5 1.25 2.5 3 2.5 5 0 4-3.5 7.5-7.5 7.5H12" />
+                  <path d="M16 22 13 19.5 16 17" />
+                </svg>
+              </div>
+              <span class="proj-num-new">01</span>
+            </div>
+            <h3 class="proj-title-new">Waste Snap</h3>
+            <ul class="proj-features-list">
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Real-time waste image classifier.</span>
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Identifies recyclable vs garbage.</span>
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Saves location & tracks points.</span>
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Built with high-accuracy models.</span>
+              </li>
+            </ul>
+            <a class="proj-link-new" href="https://github.com/sumeetdk16/waste-snap" target="_blank" rel="noopener">View on GitHub ↗</a>
+          </article>
+        </div>
+
+        <!-- 02 Newsify -->
+        <div class="r" style="transition-delay:.1s;">
+          <article class="proj-card-new">
+            <div class="proj-header-new">
+              <div class="proj-icon-box blue">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2" />
+                  <path d="M18 14h-8M15 18h-5M10 6h8v4h-8V6Z" />
+                </svg>
+              </div>
+              <span class="proj-num-new">02</span>
+            </div>
+            <h3 class="proj-title-new">Newsify</h3>
+            <ul class="proj-features-list">
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Real-time news curation engine.</span>
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Custom topic & regional interest.</span>
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Dynamic article aggregation.</span>
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Responsive headline previews.</span>
+              </li>
+            </ul>
+            <a class="proj-link-new" href="https://github.com/sumeetdk16/newsify" target="_blank" rel="noopener">View on GitHub ↗</a>
+          </article>
+        </div>
+
+        <!-- 03 Currency Xchange -->
+        <div class="r" style="transition-delay:.15s;">
+          <article class="proj-card-new">
+            <div class="proj-header-new">
+              <div class="proj-icon-box yellow">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="8" cy="12" r="6" />
+                  <circle cx="16" cy="12" r="6" />
+                </svg>
+              </div>
+              <span class="proj-num-new">03</span>
+            </div>
+            <h3 class="proj-title-new">Currency Xchange</h3>
+            <ul class="proj-features-list">
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Global exchange rate tracker.</span>
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Custom hooks for state sync.</span>
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>External API house-keeping.</span>
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Sleek Tailwind-driven UI.</span>
+              </li>
+            </ul>
+            <a class="proj-link-new" href="https://github.com/sumeetdk16/currency-xchange" target="_blank" rel="noopener">View on GitHub ↗</a>
+          </article>
+        </div>
+
+        <!-- 04 Task Master -->
+        <div class="r" style="transition-delay:.2s;">
+          <article class="proj-card-new">
+            <div class="proj-header-new">
+              <div class="proj-icon-box purple">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m9 11 3 3L22 4" />
+                  <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+                </svg>
+              </div>
+              <span class="proj-num-new">04</span>
+            </div>
+            <h3 class="proj-title-new">Task Master</h3>
+            <ul class="proj-features-list">
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Full-stack task management.</span>
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>CRUD for complex workflows.</span>
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Seamless real-time updates.</span>
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Optimized state handling.</span>
+              </li>
+            </ul>
+            <a class="proj-link-new" href="https://github.com/sumeetdk16/task-master" target="_blank" rel="noopener">View on GitHub ↗</a>
+          </article>
+        </div>
+
+      </div>
+
+      <div class="r" style="text-align:center;margin-top:40px;transition-delay:.28s;">
+        <a class="proj-ext" href="projects.html">View all projects →</a>
+      </div>
     </section>
   </div>
 
   <!-- Let's Connect -->
   <section class="connect" aria-labelledby="connect-h">
     <div class="wrap">
-      <h2 class="h-lg connect-h r shiny-text" id="connect-h">Get in touch ➦</h2>
+      <h2 class="h-lg connect-h r shiny-text" id="connect-h">Get in <span id="connect-hl">touch</span> ➦</h2>
 
       <div class="contact-grid r" style="transition-delay:.06s;">
         <!-- Left: Form -->
@@ -466,7 +669,7 @@
             <textarea id="contact-message" rows="5" placeholder="How can I help you?" required aria-required="true"></textarea>
           </div>
           <button type="submit" class="contact-submit-btn">
-            <span>Open Email Client</span>
+            <span>Send Message</span>
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
               stroke-linecap="round" stroke-linejoin="round">
               <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -592,9 +795,133 @@
   <script defer src="theme-circle.js"></script>
   <script src="rough-notation.js"></script>
   <script>
+    /* About Projects — underline on "I'm proud of" on scroll */
     (function () {
       function init() {
         var el = document.getElementById('about-proj-hl');
+        if (!el || typeof RoughNotation === 'undefined') return;
+        function makeAnn() {
+          var light = document.documentElement.dataset.theme === 'light';
+          return RoughNotation.annotate(el, {
+            type: 'underline',
+            color: light ? '#e05a00' : '#FF9800',
+            animationDuration: 700,
+            iterations: 1,
+            strokeWidth: 3,
+            padding: 2,
+            multiline: true
+          });
+        }
+        var ann = makeAnn();
+        var shown = false;
+        var showTimer = null;
+        var obs = new IntersectionObserver(function (entries) {
+          if (entries[0].isIntersecting && !shown) {
+            shown = true;
+            obs.disconnect();
+            showTimer = setTimeout(function () { ann.show(); }, 750);
+          }
+        }, { threshold: 0.1 });
+        obs.observe(el);
+        new MutationObserver(function () {
+          clearTimeout(showTimer);
+          try { ann.remove(); } catch(e) {}
+          ann = makeAnn();
+          if (shown) showTimer = setTimeout(function () { ann.show(); }, 50);
+        }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else { init(); }
+    })();
+  </script>
+  <script>
+    /* Development Stack — underline on "Development Stack" on scroll */
+    (function () {
+      function init() {
+        var el = document.getElementById('dev-stack-hl');
+        if (!el || typeof RoughNotation === 'undefined') return;
+        function makeAnn() {
+          var light = document.documentElement.dataset.theme === 'light';
+          return RoughNotation.annotate(el, {
+            type: 'underline',
+            color: light ? '#e05a00' : '#FF9800',
+            animationDuration: 700,
+            iterations: 1,
+            strokeWidth: 3,
+            padding: 2,
+            multiline: true
+          });
+        }
+        var ann = makeAnn();
+        var shown = false;
+        var showTimer = null;
+        var obs = new IntersectionObserver(function (entries) {
+          if (entries[0].isIntersecting && !shown) {
+            shown = true;
+            obs.disconnect();
+            showTimer = setTimeout(function () { ann.show(); }, 750);
+          }
+        }, { threshold: 0.1 });
+        obs.observe(el);
+        new MutationObserver(function () {
+          clearTimeout(showTimer);
+          try { ann.remove(); } catch(e) {}
+          ann = makeAnn();
+          if (shown) showTimer = setTimeout(function () { ann.show(); }, 50);
+        }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else { init(); }
+    })();
+  </script>
+  <script>
+    /* Get in touch — underline on "touch" on scroll */
+    (function () {
+      function init() {
+        var el = document.getElementById('connect-hl');
+        if (!el || typeof RoughNotation === 'undefined') return;
+        function makeAnn() {
+          var light = document.documentElement.dataset.theme === 'light';
+          return RoughNotation.annotate(el, {
+            type: 'underline',
+            color: light ? '#e05a00' : '#FF9800',
+            animationDuration: 700,
+            iterations: 1,
+            strokeWidth: 3,
+            padding: 2,
+            multiline: true
+          });
+        }
+        var ann = makeAnn();
+        var shown = false;
+        var showTimer = null;
+        var obs = new IntersectionObserver(function (entries) {
+          if (entries[0].isIntersecting && !shown) {
+            shown = true;
+            obs.disconnect();
+            showTimer = setTimeout(function () { ann.show(); }, 750);
+          }
+        }, { threshold: 0.1 });
+        obs.observe(el);
+        new MutationObserver(function () {
+          clearTimeout(showTimer);
+          try { ann.remove(); } catch(e) {}
+          ann = makeAnn();
+          if (shown) showTimer = setTimeout(function () { ann.show(); }, 50);
+        }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else { init(); }
+    })();
+  </script>
+  <script>
+    /* Where I compete — underline on "compete" on scroll */
+    (function () {
+      function init() {
+        var el = document.getElementById('compete-hl');
         if (!el || typeof RoughNotation === 'undefined') return;
         function makeAnn() {
           var light = document.documentElement.dataset.theme === 'light';

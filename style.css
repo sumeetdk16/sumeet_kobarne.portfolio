@@ -4535,7 +4535,6 @@ img {
   font-size: 13px;
   line-height: 1;
   vertical-align: middle;
-  aria-hidden: true;
 }
 
 /* Form status feedback (aria-live region) */

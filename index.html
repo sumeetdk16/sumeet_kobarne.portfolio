@@ -360,7 +360,7 @@
         <section class="sec" aria-label="Profiles and Socials">
           <div class="r" style="margin-bottom:32px;">
             <span class="label">Where to find me</span>
-            <h2 class="h-lg shiny-text">Profiles &amp; <em>Socials</em></h2>
+            <h2 class="h-lg shiny-text">Profiles &amp; <em><span id="profiles-hl">Socials</span></em></h2>
           </div>
 
           <div class="plat-grid">
@@ -682,7 +682,7 @@
         <div class="lwt-bg-grid" aria-hidden="true"></div>
         <div class="wrap lwt-wrap">
           <span class="lwt-eyebrow r"><strong>Open for Internships</strong></span>
-          <h2 class="lwt-heading shiny-text r" id="lwt-h">Let's Work Together</h2>
+          <h2 class="lwt-heading shiny-text r" id="lwt-h">Let's <span id="lwt-hl">Work Together</span></h2>
           <p class="lwt-desc r" style="transition-delay:.08s;">
             I'm actively looking for internship opportunities<br />
             where I can contribute, learn, and grow. If you<br />
@@ -733,7 +733,7 @@
 ══════════════════════════════════════ -->
       <section class="connect" aria-labelledby="connect-h">
         <div class="wrap">
-          <h2 class="h-lg connect-h r shiny-text" id="connect-h">Get in touch ➦</h2>
+          <h2 class="h-lg connect-h r shiny-text" id="connect-h">Get in <span id="home-connect-hl">touch</span> ➦</h2>
 
           <div class="contact-grid r" style="transition-delay:.06s;">
             <!-- Left: Form -->
@@ -924,6 +924,144 @@
     (function () {
       function init() {
         var el = document.getElementById('proj-hl');
+        if (!el || typeof RoughNotation === 'undefined') return;
+
+        function makeAnn() {
+          var light = document.documentElement.dataset.theme === 'light';
+          return RoughNotation.annotate(el, {
+            type: 'underline',
+            color: light ? '#e05a00' : '#FF9800',
+            animationDuration: 700,
+            iterations: 1,
+            strokeWidth: 3,
+            padding: 2,
+            multiline: true
+          });
+        }
+
+        var ann = makeAnn();
+        var shown = false;
+        var showTimer = null;
+
+        var obs = new IntersectionObserver(function (entries) {
+          if (entries[0].isIntersecting && !shown) {
+            shown = true;
+            obs.disconnect();
+            showTimer = setTimeout(function () { ann.show(); }, 750);
+          }
+        }, { threshold: 0.1 });
+        obs.observe(el);
+
+        new MutationObserver(function () {
+          clearTimeout(showTimer);
+          try { ann.remove(); } catch(e) {}
+          ann = makeAnn();
+          if (shown) showTimer = setTimeout(function () { ann.show(); }, 50);
+        }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else { init(); }
+    })();
+  </script>
+  <script>
+    /* Let's Work Together — underline on "Work Together" on scroll */
+    (function () {
+      function init() {
+        var el = document.getElementById('lwt-hl');
+        if (!el || typeof RoughNotation === 'undefined') return;
+
+        function makeAnn() {
+          var light = document.documentElement.dataset.theme === 'light';
+          return RoughNotation.annotate(el, {
+            type: 'underline',
+            color: light ? '#e05a00' : '#FF9800',
+            animationDuration: 700,
+            iterations: 1,
+            strokeWidth: 3,
+            padding: 2,
+            multiline: true
+          });
+        }
+
+        var ann = makeAnn();
+        var shown = false;
+        var showTimer = null;
+
+        var obs = new IntersectionObserver(function (entries) {
+          if (entries[0].isIntersecting && !shown) {
+            shown = true;
+            obs.disconnect();
+            showTimer = setTimeout(function () { ann.show(); }, 750);
+          }
+        }, { threshold: 0.1 });
+        obs.observe(el);
+
+        new MutationObserver(function () {
+          clearTimeout(showTimer);
+          try { ann.remove(); } catch(e) {}
+          ann = makeAnn();
+          if (shown) showTimer = setTimeout(function () { ann.show(); }, 50);
+        }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else { init(); }
+    })();
+  </script>
+  <script>
+    /* Get in touch (home) — underline on "touch" on scroll */
+    (function () {
+      function init() {
+        var el = document.getElementById('home-connect-hl');
+        if (!el || typeof RoughNotation === 'undefined') return;
+
+        function makeAnn() {
+          var light = document.documentElement.dataset.theme === 'light';
+          return RoughNotation.annotate(el, {
+            type: 'underline',
+            color: light ? '#e05a00' : '#FF9800',
+            animationDuration: 700,
+            iterations: 1,
+            strokeWidth: 3,
+            padding: 2,
+            multiline: true
+          });
+        }
+
+        var ann = makeAnn();
+        var shown = false;
+        var showTimer = null;
+
+        var obs = new IntersectionObserver(function (entries) {
+          if (entries[0].isIntersecting && !shown) {
+            shown = true;
+            obs.disconnect();
+            showTimer = setTimeout(function () { ann.show(); }, 750);
+          }
+        }, { threshold: 0.1 });
+        obs.observe(el);
+
+        new MutationObserver(function () {
+          clearTimeout(showTimer);
+          try { ann.remove(); } catch(e) {}
+          ann = makeAnn();
+          if (shown) showTimer = setTimeout(function () { ann.show(); }, 50);
+        }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else { init(); }
+    })();
+  </script>
+  <script>
+    /* Profiles & Socials — underline on "Socials" on scroll */
+    (function () {
+      function init() {
+        var el = document.getElementById('profiles-hl');
         if (!el || typeof RoughNotation === 'undefined') return;
 
         function makeAnn() {
