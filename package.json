@@ -16,6 +16,7 @@
     "@types/react": "^19.2.15",
     "@types/react-dom": "^19.2.3",
     "@vercel/speed-insights": "^2.0.0",
+    "dependencies": "^0.0.1",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "react-simple-typewriter": "^5.0.1"
